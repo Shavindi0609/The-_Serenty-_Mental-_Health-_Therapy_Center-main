@@ -51,11 +51,11 @@ public class TherapySessionSchedulingBOImpl implements TherapySessionSchedulingB
 
     @Override
     public List getAllTherapyId() throws IOException {
-        return therapistDAO.getAllId();
+        return therapyProgramsDAO.getAllId();
     }
 
     @Override
     public List getAllProgramId() throws IOException {
-        return therapyProgramsDAO.getAllId();
+        return therapistDAO.getAllId();
     }
 }

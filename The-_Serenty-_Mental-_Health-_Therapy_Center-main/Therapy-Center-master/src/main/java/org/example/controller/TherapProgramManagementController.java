@@ -130,7 +130,6 @@ public class TherapProgramManagementController implements Initializable {
                 if (isSave){
                     new Alert(Alert.AlertType.INFORMATION,"Therapy Program Save Successfully.").show();
                     loadTables();
-                    setIds();
                     refreshPage();
                 } else {
                     new Alert(Alert.AlertType.WARNING,"Therapy Program Not Save.").show();
@@ -147,7 +146,6 @@ public class TherapProgramManagementController implements Initializable {
                 if (isUpdate) {
                     new Alert(Alert.AlertType.INFORMATION,"Therapy Program Update Successfully.").show();
                     loadTables();
-                    setIds();
                     refreshPage();
                     btnSave.setText("Save");
                 }else {
@@ -157,8 +155,6 @@ public class TherapProgramManagementController implements Initializable {
                 throw new RuntimeException(e);
             }
         }
-
-
 
     }
 
@@ -180,7 +176,6 @@ public class TherapProgramManagementController implements Initializable {
                 if (isDelete){
                     new Alert(Alert.AlertType.INFORMATION,"Therapy Program Delete Successfully.").show();
                     loadTables();
-                    setIds();
                     refreshPage();
                 }else {
                     new Alert(Alert.AlertType.ERROR,"Therapy Program Not Deleted.").show();
@@ -199,7 +194,6 @@ public class TherapProgramManagementController implements Initializable {
     public void refreshOnAction(ActionEvent actionEvent) {
         loadTables();
         refreshPage();
-        setIds();
         btnSave.setText("Save");
     }
 
