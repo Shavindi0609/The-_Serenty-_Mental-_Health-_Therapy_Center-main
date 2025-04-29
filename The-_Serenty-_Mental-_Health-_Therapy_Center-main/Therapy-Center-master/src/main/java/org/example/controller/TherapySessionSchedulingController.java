@@ -145,7 +145,6 @@ public class  TherapySessionSchedulingController implements Initializable {
             }
         }
     }
-
     public void resetOnAction(ActionEvent actionEvent) {
         refreshPage();
         loadIds();

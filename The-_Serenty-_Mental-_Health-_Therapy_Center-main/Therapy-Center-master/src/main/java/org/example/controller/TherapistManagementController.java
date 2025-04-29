@@ -154,6 +154,7 @@ public class TherapistManagementController implements Initializable {
         txtStatus.clear();
         cmbProgram.setValue("");
         btnSave.setText("Save");
+        setId();
     }
 
     public void tblOnAction(MouseEvent mouseEvent) {

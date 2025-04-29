@@ -74,6 +74,7 @@ public class TherapProgramManagementController implements Initializable {
         txtDuration.clear();
         txtCost.clear();
         txtDescription.clear();
+        setIds();
     }
 
     private void loadTables() {
@@ -157,7 +158,6 @@ public class TherapProgramManagementController implements Initializable {
         }
 
     }
-
     public void tblOnAction(MouseEvent mouseEvent) {
         TherapyProgramTm selectedItem = tblTherapyProgram.getSelectionModel().getSelectedItem();
         txtName.setText(selectedItem.getName());

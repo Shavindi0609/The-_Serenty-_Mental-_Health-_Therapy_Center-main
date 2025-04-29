@@ -28,17 +28,17 @@ public class AppInitializer extends Application {
         stage.setScene(scene);
         stage.show();
 
-        Session session = FactoryConfiguration.getInstance().openSession();
-        Transaction transaction = session.beginTransaction();
-        Users user = new Users();
-        user.setName("Shavindi");
-        String hashPassword = PasswordUtil.hashPassword("#Shanu0609@");
-        user.setPassword(hashPassword);
-        user.setJobRole("Admin");
-
-        session.save(user);
-        transaction.commit();
-
-        session.close();
+//        Session session = FactoryConfiguration.getInstance().openSession();
+//        Transaction transaction = session.beginTransaction();
+//        Users user = new Users();
+//        user.setName("Shehan");
+//        String hashPassword = PasswordUtil.hashPassword("Sheh@n1234");
+//        user.setPassword(hashPassword);
+//        user.setJobRole("Admin");
+//
+//        session.save(user);
+//        transaction.commit();
+//
+//        session.close();
     }
 }
